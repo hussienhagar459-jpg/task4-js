@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List App</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container py-5">
+
+        <div class="col-md-6 mx-auto d-flex flex-column gap-2 bg-dark text-white shadow-sm rounded p-5 mb-5">
+            <h3>Add new task</h3>
+            <label for="taskName">Task Name</label>
+            <input type="text" class="form-control" id="taskName">
+
+            <label for="taskDescription">Task Description</label>
+            <input type="text" class="form-control" id="taskDescription">
+
+            <button class="btn btn-primary mt-3" id="addTask">Add Task</button>
+        </div>
+
+
+        <div class="d-flex justify-content-center align-items-center gap-3 my-5">
+            <button class="btn btn-primary" id="All">All Tasks</button>
+            <button class="btn btn-success" id="Completed">Completed Tasks</button>
+            <button class="btn btn-warning" id="Waiting">Waiting Tasks</button>
+        </div>
+
+
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Task Name</th>
+                        <th scope="col">Task Description</th>
+                        <th scope="col">Task Status</th>
+                        <th scope="col">Handle</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
